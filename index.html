@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Вишлист Владимира</title>
+  <meta name="description" content="Что подарить Владимиру: список желаний со ссылками, где купить.">
+  <meta property="og:title" content="Вишлист Владимира">
+  <meta property="og:description" content="Что подарить Владимиру: список желаний со ссылками, где купить.">
+  <meta name="theme-color" content="#f3f5f9">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Golos+Text:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <header class="envelope" aria-label="Конверт">
+      <div class="envelope__inner">
+        <div class="field field--from">
+          <span class="field__label">От кого</span>
+          <span class="field__hand">от тех, кто хочет меня порадовать</span>
+        </div>
+
+        <div class="stamp" aria-hidden="true">
+          <div class="stamp__art">
+            <svg viewBox="0 0 64 64" width="64" height="64">
+              <rect x="10" y="26" width="44" height="30" rx="2" fill="none" stroke="currentColor" stroke-width="3"/>
+              <rect x="6" y="18" width="52" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="3"/>
+              <path d="M32 18v38" stroke="currentColor" stroke-width="3"/>
+              <path d="M32 18c-4-10-16-12-16-5 0 4 8 5 16 5zm0 0c4-10 16-12 16-5 0 4-8 5-16 5z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="stamp__text">Почта желаний</div>
+        </div>
+
+        <div class="postmark" aria-hidden="true">
+          <svg viewBox="0 0 120 120" width="120" height="120">
+            <circle cx="60" cy="60" r="54" fill="none" stroke="currentColor" stroke-width="2.5"/>
+            <circle cx="60" cy="60" r="38" fill="none" stroke="currentColor" stroke-width="1.5"/>
+            <defs><path id="pm-arc" d="M60 60 m-46 0 a46 46 0 1 1 92 0 a46 46 0 1 1 -92 0"/></defs>
+            <text font-size="10.5" letter-spacing="2.2" fill="currentColor"><textPath href="#pm-arc">ВИШЛИСТ • ПОЛУЧАТЕЛЬ ВЛАДИМИР •</textPath></text>
+            <text x="60" y="66" text-anchor="middle" font-size="16" font-weight="700" fill="currentColor" id="postmark-year">2026</text>
+          </svg>
+        </div>
+
+        <div class="field field--to">
+          <span class="field__label">Кому</span>
+          <h1 class="field__hand field__hand--big">Владимиру</h1>
+        </div>
+        <div class="field field--where">
+          <span class="field__label">Куда</span>
+          <span class="field__hand">в руки, лично</span>
+        </div>
+
+        <div class="index">
+          <div class="index__digits" id="index-digits" aria-hidden="true"></div>
+          <span class="index__caption" id="index-caption">желаний в списке</span>
+        </div>
+      </div>
+    </header>
+
+    <section class="intro">
+      <p>Если хочешь меня порадовать — вот что я бы хотел получить. По ссылке у каждого желания можно сразу купить.</p>
+    </section>
+
+    <section class="wishes" aria-labelledby="wishes-title">
+      <div class="wishes__bar">
+        <h2 id="wishes-title" class="wishes__title">Желания</h2>
+        <div class="sort" role="group" aria-label="Порядок">
+          <button type="button" class="sort__btn" data-sort="priority" aria-pressed="true">Сначала главное</button>
+          <button type="button" class="sort__btn" data-sort="cheap" aria-pressed="false">Дешевле</button>
+          <button type="button" class="sort__btn" data-sort="expensive" aria-pressed="false">Дороже</button>
+        </div>
+      </div>
+      <ol class="list" id="list" aria-live="polite"></ol>
+      <div class="empty" id="empty" hidden>
+        <p class="empty__hand">Конверт пока пустой.</p>
+        <p>Желания появятся здесь совсем скоро — загляни чуть позже.</p>
+      </div>
+    </section>
+
+    <footer class="foot">
+      <p>Решил что-то подарить? Шепни мне или общим друзьям — я отмечу это как «уже дарят», чтобы не получилось двух одинаковых подарков.</p>
+    </footer>
+  </main>
+
+  <template id="wish-tpl">
+    <li class="wish">
+      <div class="wish__media"><img alt="" loading="lazy" decoding="async"></div>
+      <div class="wish__body">
+        <h3 class="wish__title"></h3>
+        <p class="wish__note"></p>
+        <a class="wish__link" target="_blank" rel="noopener noreferrer">Где купить</a>
+      </div>
+      <div class="wish__price">
+        <div class="wish__digits" aria-hidden="true"></div>
+        <span class="wish__price-text"></span>
+      </div>
+      <span class="wish__stamp" hidden></span>
+    </li>
+  </template>
+
+  <script src="app.js"></script>
+</body>
+</html>

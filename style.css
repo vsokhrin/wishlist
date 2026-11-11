@@ -1,0 +1,332 @@
+/* Вишлист в виде почтового конверта.
+   Бумага — холодная, как у конверта; чернила — шариковая ручка; рамка — авиапочта. */
+:root {
+  --paper: #eef1f6;
+  --envelope: #ffffff;
+  --ink: #1d3b8f;
+  --ink-soft: #4a62a8;
+  --air-red: #d93a2f;
+  --air-blue: #2550c0;
+  --text: #1a1e2b;
+  --muted: #646d80;
+  --line: #c6cedc;
+  --hand: "Bad Script", "Segoe Print", cursive;
+  --ui: "Golos Text", "Segoe UI", system-ui, sans-serif;
+  --step--1: 0.85rem;
+  --step-0: 1.0625rem;
+  --step-1: 1.33rem;
+  --step-2: 1.66rem;
+  --step-3: 2.6rem;
+  --step-4: clamp(2.6rem, 7vw, 4.4rem);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--text);
+  font: 400 var(--step-0)/1.55 var(--ui);
+}
+
+.page {
+  width: min(100% - 2rem, 58rem);
+  margin: 0 auto;
+  padding: clamp(1rem, 4vw, 3rem) 0 4rem;
+}
+
+:focus-visible { outline: 3px solid var(--air-blue); outline-offset: 3px; border-radius: 2px; }
+
+/* ---------- Конверт ---------- */
+.envelope {
+  position: relative;
+  padding: 12px;
+  background: repeating-linear-gradient(-45deg,
+    var(--air-red) 0 16px, var(--envelope) 16px 24px,
+    var(--air-blue) 24px 40px, var(--envelope) 40px 48px);
+  box-shadow: 0 1px 2px rgba(29, 59, 143, .12), 0 18px 40px -24px rgba(29, 59, 143, .35);
+}
+
+.envelope__inner {
+  position: relative;
+  background: var(--envelope);
+  padding: clamp(1.25rem, 4vw, 2.5rem);
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  grid-template-areas:
+    "from  from  stamp"
+    ".     to    to"
+    "index where where";
+  gap: 1.25rem 2rem;
+  min-height: 22rem;
+}
+
+.field { display: flex; align-items: baseline; gap: .75rem; }
+.field--from  { grid-area: from; align-self: start; max-width: 30rem; }
+.field--to    { grid-area: to; align-self: end; }
+.field--where { grid-area: where; align-self: start; }
+.field--to, .field--where { justify-self: stretch; padding-left: clamp(0rem, 6vw, 5rem); }
+
+.field__label {
+  flex: none;
+  font-size: var(--step--1);
+  color: var(--muted);
+}
+
+.field__hand {
+  flex: 1;
+  font: 400 var(--step-1)/1.3 var(--hand);
+  color: var(--ink);
+  border-bottom: 1px solid var(--line);
+  padding: 0 .25rem .15rem;
+}
+
+.field__hand--big {
+  margin: 0;
+  font-size: var(--step-4);
+  line-height: 1.05;
+  font-weight: 400;
+  transform: rotate(-2deg);
+  transform-origin: left bottom;
+}
+
+/* Марка с перфорацией */
+.stamp {
+  grid-area: stamp;
+  justify-self: end;
+  width: 7.25rem;
+  padding: 10px;
+  background: #e6ebf4; /* бумага марки чуть темнее конверта — видны зубцы */
+  /* зубцы только по краям: сетка дырок + сплошной центр */
+  -webkit-mask:
+    radial-gradient(circle, transparent 0 3.5px, #000 4px) -6px -6px / 12px 12px,
+    linear-gradient(#000 0 0) center / calc(100% - 12px) calc(100% - 12px) no-repeat;
+          mask:
+    radial-gradient(circle, transparent 0 3.5px, #000 4px) -6px -6px / 12px 12px,
+    linear-gradient(#000 0 0) center / calc(100% - 12px) calc(100% - 12px) no-repeat;
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, .25));
+  transform: rotate(3deg);
+}
+.stamp__art {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 4 / 4.4;
+  background: var(--air-red);
+  color: #fff;
+}
+.stamp__text {
+  margin-top: .35rem;
+  text-align: center;
+  font-size: .72rem;
+  font-weight: 600;
+  line-height: 1.15;
+  color: var(--air-red);
+}
+
+/* Почтовый штемпель поверх марки */
+.postmark {
+  position: absolute;
+  top: clamp(2.2rem, 6vw, 3.5rem);
+  right: clamp(4.5rem, 12vw, 7rem);
+  color: var(--ink);
+  opacity: .55;
+  transform: rotate(-14deg);
+  pointer-events: none;
+  font-family: var(--ui);
+}
+
+/* Поле индекса — как на настоящем конверте */
+.index { grid-area: index; align-self: end; display: grid; gap: .4rem; justify-items: start; }
+.index__digits { display: flex; gap: .45rem; }
+.index__caption { font-size: var(--step--1); color: var(--muted); }
+
+.pd { display: block; overflow: visible; }
+.pd line { stroke-linecap: round; }
+.pd .tpl { stroke: var(--line); stroke-width: .7; stroke-dasharray: .1 1.6; }
+.pd .on  { stroke: var(--ink); stroke-width: 1.6; }
+
+.index .pd { width: 2.1rem; height: 4.2rem; }
+.index .pd .on { stroke-width: 1.4; }
+
+/* Одна запланированная анимация: индекс «пишется» ручкой при загрузке */
+@media (prefers-reduced-motion: no-preference) {
+  .index .pd .on {
+    stroke-dasharray: 12;
+    stroke-dashoffset: 12;
+    animation: write .35s ease-out forwards;
+    animation-delay: calc(var(--i) * 90ms + 250ms);
+  }
+}
+@keyframes write { to { stroke-dashoffset: 0; } }
+
+/* ---------- Текст и список ---------- */
+.intro {
+  max-width: 38rem;
+  margin: 2.5rem 0 0;
+  font-size: var(--step-1);
+  line-height: 1.5;
+}
+.intro p { margin: 0; }
+
+.wishes { margin-top: 3rem; }
+
+.wishes__bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: .75rem 2rem;
+  padding-bottom: .9rem;
+}
+.wishes__title { margin: 0; font-size: var(--step-2); font-weight: 600; letter-spacing: -.01em; }
+
+.sort { display: flex; flex-wrap: wrap; gap: .25rem 1.25rem; }
+.sort__btn {
+  font: inherit;
+  font-size: var(--step--1);
+  color: var(--muted);
+  background: none;
+  border: 0;
+  padding: .3rem 0;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+}
+.sort__btn:hover { color: var(--text); }
+.sort__btn[aria-pressed="true"] { color: var(--ink); border-bottom-color: var(--ink); font-weight: 600; }
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background: var(--envelope);
+  box-shadow: 0 1px 2px rgba(29, 59, 143, .1);
+}
+
+/* Каждое желание — отрывной талон: пунктир и полукруглые вырезы по краям */
+.wish {
+  position: relative;
+  display: grid;
+  grid-template-columns: 6rem 1fr auto;
+  gap: 1.25rem 1.5rem;
+  align-items: center;
+  padding: 1.5rem clamp(1rem, 3vw, 2rem);
+}
+.wish + .wish { border-top: 2px dashed var(--line); }
+.wish + .wish::before,
+.wish + .wish::after {
+  content: "";
+  position: absolute;
+  top: -9px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--paper);
+}
+.wish + .wish::before { left: -8px; }
+.wish + .wish::after  { right: -8px; }
+
+.wish--noimg { grid-template-columns: 1fr auto; }
+.wish--noimg .wish__media { display: none; }
+
+.wish__media {
+  width: 6rem;
+  aspect-ratio: 1;
+  background: var(--paper);
+  overflow: hidden;
+}
+.wish__media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+.wish__body { min-width: 0; }
+.wish__title { margin: 0; font-size: var(--step-1); font-weight: 600; line-height: 1.3; }
+.wish__note { margin: .3rem 0 0; color: var(--muted); max-width: 34rem; }
+.wish__note:empty { display: none; }
+
+.wish__link {
+  display: inline-block;
+  margin-top: .6rem;
+  color: var(--ink);
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: .2em;
+}
+.wish__link:hover { text-decoration-thickness: 2px; }
+
+.wish__price { justify-self: end; text-align: right; }
+.wish__digits { display: flex; align-items: flex-end; gap: .3rem; }
+.wish__digits .pd { width: 1.05rem; height: 2.1rem; }
+.wish__digits .gap { width: .35rem; }
+.wish__digits .cur { font: 400 1.6rem/1 var(--hand); color: var(--ink); margin-left: .2rem; }
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px; height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+/* Резиновые штампы */
+.wish__stamp {
+  position: absolute;
+  top: .75rem;
+  right: clamp(1rem, 3vw, 2rem);
+  padding: .1rem .5rem;
+  border: 2px solid currentColor;
+  border-radius: 4px;
+  font-size: .78rem;
+  font-weight: 700;
+  transform: rotate(-6deg);
+  opacity: .85;
+}
+.wish--top .wish__price,
+.wish--reserved .wish__price,
+.wish--gifted .wish__price { margin-top: 1.6rem; }
+.wish--top .wish__stamp      { color: var(--air-red); }
+.wish--reserved .wish__stamp { color: var(--ink); }
+.wish--gifted .wish__stamp   { color: var(--muted); }
+.wish--reserved > :not(.wish__stamp),
+.wish--gifted > :not(.wish__stamp) { opacity: .45; }
+.wish--gifted .wish__title { text-decoration: line-through; }
+
+.empty {
+  padding: 3rem clamp(1rem, 3vw, 2rem);
+  background: var(--envelope);
+  color: var(--muted);
+}
+.empty p { margin: 0; }
+.empty__hand { font: 400 var(--step-2)/1.3 var(--hand); color: var(--ink); margin-bottom: .4rem !important; }
+
+.foot { margin-top: 2.5rem; color: var(--muted); font-size: var(--step--1); max-width: 38rem; }
+.foot p { margin: 0; }
+
+/* ---------- Телефон ---------- */
+@media (max-width: 640px) {
+  .envelope { padding: 8px; }
+  .envelope__inner {
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+      "from  stamp"
+      "to    to"
+      "where where"
+      "index index";
+    min-height: 0;
+    gap: 1.1rem;
+  }
+  .field--from { flex-direction: column; gap: .2rem; }
+  .field--to, .field--where { padding-left: 0; }
+  .stamp { width: 5.5rem; }
+  .postmark { right: 4.6rem; top: 3.4rem; opacity: .45; }
+  .postmark svg { width: 90px; height: 90px; }
+  .index { margin-top: .5rem; }
+
+  .wish { grid-template-columns: 4.5rem 1fr; }
+  .wish--top, .wish--reserved, .wish--gifted { padding-top: 2.8rem; }
+  .wish__price { margin-top: 0 !important; }
+  .wish__stamp { top: .9rem; }
+  .wish--noimg { grid-template-columns: 1fr; }
+  .wish__media { width: 4.5rem; }
+  .wish__price { grid-column: 1 / -1; justify-self: start; text-align: left; }
+}
