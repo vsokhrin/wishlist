@@ -199,57 +199,6 @@
       ]
     },
     {
-      "category": "Клавиатуры",
-      "title": "Кастомная клавиатура Class 60",
-      "price": 15000,
-      "image": "https://30.img.avito.st/image/1/1.elIEiLa11rsqKUy7fLEIRB0o1Lu6I0y7KinUuQ.42NAGFgddcZopwLUx2DaeymcUINp2eo53Qn9sqpFBN0",
-      "search": "Class 60 клавиатура",
-      "searchIn": [
-        "avito",
-        "market"
-      ],
-      "gone": true
-    },
-    {
-      "category": "Клавиатуры",
-      "title": "Сплит-клавиатура Totem 38 с донглом Prospector",
-      "note": "Раздельная клавиатура на 38 клавиш.",
-      "price": 14000,
-      "image": "https://c90.img.avito.st/image/1/1.UUnQTLa1_aCq5TOo_glMMOPs_6Bu5zOoquX_og.59lSjLCTAHXYhnlFxnzGO5DfRzAxGU2LhVLhY556WRI",
-      "search": "Totem 38 клавиатура",
-      "searchIn": [
-        "avito",
-        "ali"
-      ],
-      "gone": true
-    },
-    {
-      "category": "Клавиатуры",
-      "title": "Сплит-клавиатура Dactyl Manuform",
-      "note": "Объёмная эргономичная раздельная клавиатура.",
-      "price": 8000,
-      "image": "https://60.img.avito.st/image/1/1.axAe4La1x_l0SxnzRL1mSVdBxfmgSxnzdEvF-w.uVb9FcbAvpCGzc5VkeWN2Wm79jUcftF0NmXrLgwARMw",
-      "search": "Dactyl Manuform",
-      "searchIn": [
-        "avito",
-        "ali"
-      ],
-      "gone": true
-    },
-    {
-      "category": "Клавиатуры",
-      "title": "Кейкапы PBTfans No Signal",
-      "price": 5500,
-      "image": "https://50.img.avito.st/image/1/1.eyBrdra118lx0XnPERtpamrW1cnV3XnPcdHVyw.5P24eP41RkDRwYjjvIkA65-RZ2RvHl9fqiKUA2CHmLM",
-      "search": "PBTfans No Signal",
-      "searchIn": [
-        "avito",
-        "ali",
-        "ozon"
-      ],
-      "gone": true
-    },
-    {
       "category": "Мыши",
       "title": "Vaxee NP-01 Ergo",
       "note": "Есть проводная и беспроводная (Wireless 8K) версии.",
@@ -376,8 +325,7 @@
           "note": "золотой"
         }
       ],
-      "search": "FiiO SnowSky Echo Mini",
-      "gone": true
+      "search": "FiiO SnowSky Echo Mini"
     },
     {
       "category": "Мониторы",
@@ -416,19 +364,6 @@
       "search": "игровой монитор 4K 240 Гц"
     },
     {
-      "category": "Мониторы",
-      "title": "Монитор Gigabyte Aorus FO48U",
-      "note": "Большой 48-дюймовый OLED-монитор 4K.",
-      "price": 49490,
-      "image": "https://10.img.avito.st/image/1/1.fKGdzra10EiNaHRP6dNBqMZv0kgjZXRPjWjSSg.PoMC2n0IgPqEMZBuSzF1-FoytwOdO7NoUSJd8vyT1NQ",
-      "search": "Aorus FO48U",
-      "searchIn": [
-        "avito",
-        "market"
-      ],
-      "gone": true
-    },
-    {
       "category": "Компьютеры и железо",
       "title": "SSD Samsung 9100 Pro на 2 ТБ",
       "note": "Быстрый NVMe-накопитель на PCIe 5.0.",
@@ -441,8 +376,7 @@
           "price": 41990
         }
       ],
-      "search": "Samsung 9100 Pro 2TB",
-      "gone": true
+      "search": "Samsung 9100 Pro 2TB"
     },
     {
       "category": "Компьютеры и железо",
@@ -458,15 +392,6 @@
         }
       ],
       "search": "Mac Studio M5 Max"
-    },
-    {
-      "category": "Компьютеры и железо",
-      "title": "MacBook Pro на M-чипе",
-      "note": "Смотрел 14″ M3 Pro, 16″ M1 Max и 16″ M2 Max.",
-      "price": 89990,
-      "image": "https://70.img.avito.st/image/1/1.OLsFJba1lFIfgjpUeUlJi0yEllK7jjpUH4KWUA.stFriMAOdNb7peFkuOId2cB2_3uUQZbSXfVsdluSoz8",
-      "search": "MacBook Pro M3 Pro",
-      "gone": true
     },
     {
       "category": "Компьютеры и железо",
@@ -488,28 +413,6 @@
       ]
     },
     {
-      "category": "Компьютеры и железо",
-      "title": "Мощный игровой компьютер",
-      "note": "Подойдёт похожая мощная сборка.",
-      "price": 125000,
-      "image": "https://80.img.avito.st/image/1/1.Kk75N7a1hqfjkCihoTMffuyXhKdHnCih45CEpQ.Hg9MXeq6eMRsJBwp9uKyzxddLxe_MuqimcWAUz_7ifc",
-      "search": "мощный игровой компьютер",
-      "searchIn": [
-        "avito",
-        "market"
-      ],
-      "gone": true
-    },
-    {
-      "category": "Консоли и игры",
-      "title": "Nintendo Switch 2",
-      "price": 30000,
-      "image": "https://c70.img.avito.st/image/1/1.7QvF3ra1QeK_d4_qk_n3SY5_Q-J7dY_qv3dD4A.SPLMPfcUithaXY0yBA2iKNVCRc8cN2RNRz3Wanc04v4",
-      "search": "Nintendo Switch 2",
-      "gone": true,
-      "priority": 2
-    },
-    {
       "category": "Консоли и игры",
       "title": "Steam Controller (2026)",
       "note": "Новый геймпад Valve с двумя тачпадами. Официально продаётся только в Steam, за $99.",
@@ -523,14 +426,6 @@
         }
       ],
       "search": "Steam Controller 2026"
-    },
-    {
-      "category": "Консоли и игры",
-      "title": "Nintendo Switch OLED + геймпад Mobapad",
-      "price": 25000,
-      "image": "https://20.img.avito.st/image/1/1.Ps-QMLa1kiaKlzwg4Chtqd6RkCYumzwgipeQJA.Vbh1AS_TECUyzvL8oKWSduHLq2iA9Fjs00MRIrMFL6U",
-      "search": "Nintendo Switch OLED",
-      "gone": true
     },
     {
       "category": "Консоли и игры",
@@ -576,19 +471,163 @@
     },
     {
       "category": "Консоли и игры",
-      "title": "The Legend of Zelda: Breath of the Wild (картридж)",
-      "price": 2200,
-      "image": "https://20.img.avito.st/image/1/1.864wpLa1X0daD4FNWpuVyR8EXUeOD4FNWg9dRQ.pzbysYzAJlJAF-bvYrBTu7UiV1rSMleFeNBKAk2p_o0",
-      "search": "Zelda Breath of the Wild картридж",
-      "gone": true
+      "title": "Monster Hunter Wilds (ПК)",
+      "note": "Новая часть Monster Hunter, ключ для Steam.",
+      "price": 1565,
+      "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/2246340/header.jpg",
+      "links": [
+        {
+          "shop": "StopGame",
+          "url": "https://stopgame.ru/game/monster_hunter_wilds/prices",
+          "price": 1565,
+          "note": "ключи РФ+СНГ, сравнение цен"
+        },
+        {
+          "shop": "Steam",
+          "url": "https://store.steampowered.com/app/2246340/"
+        }
+      ]
     },
     {
       "category": "Консоли и игры",
-      "title": "Super Mario Odyssey (картридж)",
-      "price": 2300,
-      "image": "https://c80.img.avito.st/image/1/1.EVg0rra1vbFeBWO7GpZWDBIOv7GKBWO7XgW_sw.L4Cs6L3ZPmxX1RpB_YL33c0KT5Ne-S6-_6VvEeUUzo0",
-      "search": "Super Mario Odyssey картридж",
-      "gone": true
+      "title": "Hollow Knight: Silksong (ПК)",
+      "note": "Продолжение Hollow Knight, вышло в сентябре 2025 года.",
+      "price": 577,
+      "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/1030300/header.jpg",
+      "links": [
+        {
+          "shop": "Steam",
+          "url": "https://store.steampowered.com/app/1030300/",
+          "price": 710
+        },
+        {
+          "shop": "StopGame",
+          "url": "https://stopgame.ru/game/hollow_knight_silksong/prices",
+          "price": 577,
+          "note": "гифты, сравнение цен"
+        }
+      ]
+    },
+    {
+      "category": "Консоли и игры",
+      "title": "Clair Obscur: Expedition 33 (ПК)",
+      "note": "Пошаговая RPG с боями, где важна реакция в реальном времени.",
+      "price": 1700,
+      "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/1903340/header.jpg",
+      "links": [
+        {
+          "shop": "Steam",
+          "url": "https://store.steampowered.com/app/1903340/",
+          "price": 3499
+        },
+        {
+          "shop": "StopGame",
+          "url": "https://stopgame.ru/game/clair_obscur_expedition_33/prices",
+          "price": 1700,
+          "note": "ключи РФ+СНГ, сравнение цен"
+        },
+        {
+          "shop": "LootBar",
+          "url": "https://www.lootbar.com/ru/game-key/clair-obscur-expedition-33",
+          "price": 2313
+        },
+        {
+          "shop": "IGM",
+          "url": "https://igm.gg/game/clair-obscur-expedition-33"
+        }
+      ]
+    },
+    {
+      "category": "Консоли и игры",
+      "title": "Hades II (ПК)",
+      "note": "Рогалик от Supergiant, продолжение Hades.",
+      "price": 589,
+      "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/1145350/header.jpg",
+      "links": [
+        {
+          "shop": "StopGame",
+          "url": "https://stopgame.ru/game/hades_2/prices",
+          "price": 589,
+          "note": "гифты, сравнение цен"
+        },
+        {
+          "shop": "Steam",
+          "url": "https://store.steampowered.com/app/1145350/"
+        }
+      ]
+    },
+    {
+      "category": "Консоли и игры",
+      "title": "Elden Ring Nightreign (ПК)",
+      "note": "Кооперативное приключение во вселенной Elden Ring.",
+      "price": 1749,
+      "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/2622380/header.jpg",
+      "links": [
+        {
+          "shop": "Steam",
+          "url": "https://store.steampowered.com/app/2622380/",
+          "price": 2849
+        },
+        {
+          "shop": "IGM",
+          "url": "https://igm.gg/game/elden-ring-nightreign",
+          "price": 2849
+        },
+        {
+          "shop": "StopGame",
+          "url": "https://stopgame.ru/game/elden_ring_nightreign/prices",
+          "price": 1749,
+          "note": "ключи РФ+СНГ, сравнение цен"
+        }
+      ]
+    },
+    {
+      "category": "Консоли и игры",
+      "title": "Жёсткий кейс для ROG Ally",
+      "note": "Чтобы носить консоль с собой и не поцарапать.",
+      "price": 4470,
+      "links": [
+        {
+          "shop": "Яндекс Маркет",
+          "url": "https://market.yandex.ru/cc/9AS5cs",
+          "price": 4470
+        }
+      ],
+      "search": "кейс чехол ROG Ally",
+      "searchIn": [
+        "ozon",
+        "avito"
+      ]
+    },
+    {
+      "category": "Консоли и игры",
+      "title": "SSD WD Black SN770M на 2 ТБ (M.2 2230)",
+      "note": "Маленький SSD, который ставится в ROG Ally вместо родного на 512 ГБ.",
+      "links": [
+        {
+          "shop": "DNS",
+          "url": "https://www.dns-shop.ru/search/?q=WD%20SN770M"
+        }
+      ],
+      "search": "WD Black SN770M 2TB"
+    },
+    {
+      "category": "Консоли и игры",
+      "title": "Геймпад 8BitDo Ultimate 2.4G в стиле Genshin Impact",
+      "note": "Официальный геймпад по Genshin, оформлен под Чун Юня. Работает с ПК.",
+      "links": [
+        {
+          "shop": "DNS",
+          "url": "https://www.dns-shop.ru/search/?q=8BitDo%20Ultimate%20Genshin"
+        }
+      ],
+      "search": "8BitDo Ultimate Genshin Impact"
+    },
+    {
+      "category": "Консоли и игры",
+      "title": "Док-станция ROG Gaming Charger Dock",
+      "note": "Зарядка с HDMI и USB: подключить Ally к телевизору, клавиатуре и мыши.",
+      "search": "ROG Gaming Charger Dock"
     },
     {
       "category": "Книги",
@@ -620,19 +659,6 @@
     },
     {
       "category": "Книги",
-      "title": "Книга «Linux с нуля»",
-      "price": 600,
-      "image": "https://b00.img.avito.st/image/1/1.mpQjMLa1Nn0Nkax9GwK3z2-RNH2dm6x9DZE0fw.YancP8dKDT9kCFyUWE5416mXWCjgmR7Yx4sc7dOIkrE",
-      "search": "Linux с нуля книга",
-      "searchIn": [
-        "ozon",
-        "market",
-        "avito"
-      ],
-      "gone": true
-    },
-    {
-      "category": "Книги",
       "title": "Книги по программированию",
       "note": "Подборка из объявления.",
       "price": 400,
@@ -661,18 +687,6 @@
     },
     {
       "category": "Рабочее место",
-      "title": "Компьютерное кресло",
-      "note": "В объявлении было «кресло для компьютера с диваном».",
-      "price": 13300,
-      "image": "https://10.img.avito.st/image/1/1.7MglW7a1QCEL-tohcSz7ozP7QiGb8NohC_pCIw.bTSKOZLmnzXbUhSeho1KApk2lc4Vwoi7JceDsgDA2pY",
-      "search": "кресло для компьютера с диваном",
-      "searchIn": [
-        "avito"
-      ],
-      "gone": true
-    },
-    {
-      "category": "Рабочее место",
       "title": "Подставка для наушников «Уолтер Уайт»",
       "price": 1499,
       "image": "https://c80.img.avito.st/image/1/1.4wTRkLa1T-3_MdXtm6PdV-gwTe1vO9Xt_zFN7w.QznlJw4ct1AgMd72oP8POzFfeb35tiiqUBfXQ8K7j5A",
@@ -688,29 +702,6 @@
         "avito",
         "ozon"
       ]
-    },
-    {
-      "category": "Рабочее место",
-      "title": "Накладка на выключатель в виде ретро-геймпада",
-      "price": 1500,
-      "image": "https://b00.img.avito.st/image/1/1.1xQHUba1e_1Z95H6JWL3TQLxef25-pH6Wfd5_w.tKjpibJLuOBbhll8p-_u-j9RHExVAnpVoYVpfXqV150",
-      "search": "накладка на выключатель геймпад",
-      "searchIn": [
-        "avito",
-        "ozon",
-        "market"
-      ],
-      "gone": true
-    },
-    {
-      "category": "Разное",
-      "title": "Flipper Zero",
-      "note": "Карманный мультитул: радио, NFC, RFID, инфракрасный порт.",
-      "price": 16000,
-      "image": "https://10.img.avito.st/image/1/1.lJzWKra1OHWWjsxw8hydndiKOnVogcxwlo46dw.sHCcIQ3AgmNhz_ra7yviZGqN7b4lf7aPGn-c0kEneu0",
-      "search": "Flipper Zero",
-      "gone": true,
-      "priority": 2
     },
     {
       "category": "Разное",
