@@ -471,115 +471,75 @@
     },
     {
       "category": "Консоли и игры",
-      "title": "Monster Hunter Wilds (ПК)",
-      "note": "Новая часть Monster Hunter, ключ для Steam.",
-      "price": 1565,
-      "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/2246340/header.jpg",
+      "title": "Mario Kart World (Switch 2)",
+      "note": "Главный эксклюзив Switch 2: гонки в открытом мире.",
+      "price": 7499,
       "links": [
         {
-          "shop": "StopGame",
-          "url": "https://stopgame.ru/game/monster_hunter_wilds/prices",
-          "price": 1565,
-          "note": "ключи РФ+СНГ, сравнение цен"
-        },
-        {
-          "shop": "Steam",
-          "url": "https://store.steampowered.com/app/2246340/"
+          "shop": "BigGeek",
+          "url": "https://biggeek.ru/products/igra-dla-nintendo-switch-2-mario-kart-world",
+          "price": 7499,
+          "note": "картридж, русские субтитры"
         }
-      ]
+      ],
+      "search": "Mario Kart World Switch 2"
     },
     {
       "category": "Консоли и игры",
-      "title": "Hollow Knight: Silksong (ПК)",
-      "note": "Продолжение Hollow Knight, вышло в сентябре 2025 года.",
-      "price": 577,
-      "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/1030300/header.jpg",
-      "links": [
-        {
-          "shop": "Steam",
-          "url": "https://store.steampowered.com/app/1030300/",
-          "price": 710
-        },
-        {
-          "shop": "StopGame",
-          "url": "https://stopgame.ru/game/hollow_knight_silksong/prices",
-          "price": 577,
-          "note": "гифты, сравнение цен"
-        }
-      ]
+      "title": "The Legend of Zelda: Breath of the Wild — Nintendo Switch 2 Edition",
+      "note": "Улучшенная версия для Switch 2: выше разрешение, плавнее картинка, быстрее загрузки.",
+      "search": "Zelda Breath of the Wild Nintendo Switch 2 Edition"
     },
     {
       "category": "Консоли и игры",
-      "title": "Clair Obscur: Expedition 33 (ПК)",
-      "note": "Пошаговая RPG с боями, где важна реакция в реальном времени.",
-      "price": 1700,
-      "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/1903340/header.jpg",
-      "links": [
-        {
-          "shop": "Steam",
-          "url": "https://store.steampowered.com/app/1903340/",
-          "price": 3499
-        },
-        {
-          "shop": "StopGame",
-          "url": "https://stopgame.ru/game/clair_obscur_expedition_33/prices",
-          "price": 1700,
-          "note": "ключи РФ+СНГ, сравнение цен"
-        },
-        {
-          "shop": "LootBar",
-          "url": "https://www.lootbar.com/ru/game-key/clair-obscur-expedition-33",
-          "price": 2313
-        },
-        {
-          "shop": "IGM",
-          "url": "https://igm.gg/game/clair-obscur-expedition-33"
-        }
-      ]
+      "title": "Super Mario Odyssey (картридж)",
+      "note": "Игра с первой Switch, подходит и для Switch 2.",
+      "search": "Super Mario Odyssey картридж"
     },
     {
       "category": "Консоли и игры",
-      "title": "Hades II (ПК)",
-      "note": "Рогалик от Supergiant, продолжение Hades.",
-      "price": 589,
-      "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/1145350/header.jpg",
+      "title": "Metroid Prime 4: Beyond (Switch 2)",
+      "note": "На Switch 2 можно целиться Joy-Con 2 как мышью.",
+      "price": 8999,
       "links": [
         {
-          "shop": "StopGame",
-          "url": "https://stopgame.ru/game/hades_2/prices",
-          "price": 589,
-          "note": "гифты, сравнение цен"
-        },
-        {
-          "shop": "Steam",
-          "url": "https://store.steampowered.com/app/1145350/"
+          "shop": "BigGeek",
+          "url": "https://biggeek.ru/products/igra-dla-ns2-metroid-prime-4-beyond",
+          "price": 8999,
+          "note": "картридж, только английский"
         }
-      ]
+      ],
+      "search": "Metroid Prime 4 Beyond Switch 2"
     },
     {
       "category": "Консоли и игры",
-      "title": "Elden Ring Nightreign (ПК)",
-      "note": "Кооперативное приключение во вселенной Elden Ring.",
-      "price": 1749,
-      "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/2622380/header.jpg",
+      "title": "Pokémon Legends: Z-A — Nintendo Switch 2 Edition",
+      "note": "Лучше издание с дополнением Mega Dimension на одном картридже.",
+      "search": "Pokemon Legends Z-A Switch 2"
+    },
+    {
+      "category": "Консоли и игры",
+      "title": "Super Mario Galaxy + Super Mario Galaxy 2",
+      "note": "Две игры с Wii в одном сборнике; на Switch 2 идут в 4K.",
+      "search": "Super Mario Galaxy 1+2 Switch"
+    },
+    {
+      "category": "Консоли и игры",
+      "title": "Kirby Air Riders (Switch 2)",
+      "note": "Гонки и битвы с Кирби, есть только на Switch 2.",
+      "search": "Kirby Air Riders Switch 2"
+    },
+    {
+      "category": "Консоли и игры",
+      "title": "Карта памяти microSD Express на 256 ГБ для Switch 2",
+      "note": "Обычные microSD Switch 2 не поддерживает, нужна карта с пометкой EX.",
       "links": [
         {
-          "shop": "Steam",
-          "url": "https://store.steampowered.com/app/2622380/",
-          "price": 2849
-        },
-        {
-          "shop": "IGM",
-          "url": "https://igm.gg/game/elden-ring-nightreign",
-          "price": 2849
-        },
-        {
-          "shop": "StopGame",
-          "url": "https://stopgame.ru/game/elden_ring_nightreign/prices",
-          "price": 1749,
-          "note": "ключи РФ+СНГ, сравнение цен"
+          "shop": "DNS",
+          "url": "https://www.dns-shop.ru/search/?q=microSD%20Express"
         }
-      ]
+      ],
+      "search": "microSD Express 256 ГБ"
     },
     {
       "category": "Консоли и игры",
@@ -610,18 +570,6 @@
         }
       ],
       "search": "WD Black SN770M 2TB"
-    },
-    {
-      "category": "Консоли и игры",
-      "title": "Геймпад 8BitDo Ultimate 2.4G в стиле Genshin Impact",
-      "note": "Официальный геймпад по Genshin, оформлен под Чун Юня. Работает с ПК.",
-      "links": [
-        {
-          "shop": "DNS",
-          "url": "https://www.dns-shop.ru/search/?q=8BitDo%20Ultimate%20Genshin"
-        }
-      ],
-      "search": "8BitDo Ultimate Genshin Impact"
     },
     {
       "category": "Консоли и игры",
