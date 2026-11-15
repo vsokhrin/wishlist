@@ -62,7 +62,7 @@
     </header>
 
     <section class="intro">
-      <p>Если хочешь меня порадовать — вот что я бы хотел получить. По ссылке у каждого желания можно сразу купить.</p>
+      <p>Если хочешь меня порадовать — вот что я бы хотел получить. Под каждым желанием есть ссылки на магазины, а цена справа — самая низкая из тех, что я нашёл.</p>
     </section>
 
     <section class="wishes" aria-labelledby="wishes-title">
@@ -74,7 +74,8 @@
           <button type="button" class="sort__btn" data-sort="expensive" aria-pressed="false">Дороже</button>
         </div>
       </div>
-      <ol class="list" id="list" aria-live="polite"></ol>
+      <div class="cats" id="cats" role="group" aria-label="Категории" hidden></div>
+      <div class="groups" id="groups"></div>
       <div class="empty" id="empty" hidden>
         <p class="empty__hand">Конверт пока пустой.</p>
         <p>Желания появятся здесь совсем скоро — загляни чуть позже.</p>
@@ -88,11 +89,12 @@
 
   <template id="wish-tpl">
     <li class="wish">
-      <div class="wish__media"><img alt="" loading="lazy" decoding="async"></div>
+      <div class="wish__media"><img alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"></div>
       <div class="wish__body">
-        <h3 class="wish__title"></h3>
+        <h4 class="wish__title"></h4>
         <p class="wish__note"></p>
-        <a class="wish__link" target="_blank" rel="noopener noreferrer">Где купить</a>
+        <p class="wish__gone" hidden>Объявление, которое я сохранил, уже сняли. Вот где искать сейчас.</p>
+        <ul class="shops"></ul>
       </div>
       <div class="wish__price">
         <div class="wish__digits" aria-hidden="true"></div>

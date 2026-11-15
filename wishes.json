@@ -1,4 +1,734 @@
 {
   "currency": "₽",
-  "wishes": []
+  "categories": [
+    "Клавиатуры",
+    "Мыши",
+    "Звук",
+    "Мониторы",
+    "Компьютеры и железо",
+    "Консоли и игры",
+    "Книги",
+    "Рабочее место",
+    "Разное"
+  ],
+  "wishes": [
+    {
+      "category": "Клавиатуры",
+      "title": "Сплит-клавиатура Corne v3",
+      "note": "Раздельная клавиатура на 42 клавиши. Подойдёт любая сборка: на Choc или Cherry, в белом или тёмном корпусе.",
+      "price": 5500,
+      "image": "https://60.img.avito.st/image/1/1.rZmzL7a1AXDJhs945T3P2ciOA3ANhM94yYYDcg.qBzXdSpJ0NQkiQLsDSQR_I7Ia2WtCugUhpiJ1cwGGNQ",
+      "links": [
+        {
+          "shop": "Авито",
+          "url": "https://www.avito.ru/rostov-na-donu/tovary_dlya_kompyutera/split_klaviatura_corne_v3_7422486677",
+          "price": 5500
+        }
+      ],
+      "search": "Corne v3 клавиатура",
+      "searchIn": [
+        "avito",
+        "ali",
+        "ozon"
+      ],
+      "priority": 2
+    },
+    {
+      "category": "Клавиатуры",
+      "title": "HHKB Professional Type-S",
+      "note": "Классика для программистов: 60 клавиш, тихие ёмкостные переключатели Topre. HYBRID Type-S тоже подойдёт.",
+      "price": 12999,
+      "image": "https://40.img.avito.st/image/1/1.rrQTqba1Al15AtxXQ9fh6hIJAF2tAtxXeQIAXw.9YwVLyU32_eswOzByhnMre7cs_9JF6xDTZ3sgHe7CfM",
+      "links": [
+        {
+          "shop": "Авито",
+          "url": "https://www.avito.ru/velikiy_ustyug/tovary_dlya_kompyutera/klaviatura_hhkb_professional_2_type-s_8515076802",
+          "price": 12999
+        }
+      ],
+      "search": "HHKB Professional Type-S",
+      "priority": 2
+    },
+    {
+      "category": "Клавиатуры",
+      "title": "Сплит-клавиатура с трекболом",
+      "note": "Раздельная клавиатура со встроенным трекболом.",
+      "price": 10752,
+      "image": "https://c60.img.avito.st/image/1/1.cytVra13sJN_xDKX39VTzb33MKJ_RDKTf_cwA.Z0VtcUpGMRcqEsspIJFcxji2If6Ss-AtKWspADRNeQQ",
+      "links": [
+        {
+          "shop": "Авито",
+          "url": "https://www.avito.ru/tyumen/tovary_dlya_kompyutera/razdelnaya_split_klaviatura_s_trekbolom_8422267436",
+          "price": 10752
+        }
+      ],
+      "search": "сплит клавиатура с трекболом",
+      "searchIn": [
+        "avito",
+        "ali",
+        "ozon"
+      ],
+      "priority": 2
+    },
+    {
+      "category": "Клавиатуры",
+      "title": "HHKB Studio",
+      "note": "Версия HHKB со встроенным трекпоинтом и кнопками мыши.",
+      "price": 30000,
+      "image": "https://10.img.avito.st/image/1/1.MiSGDLa1ns3YqnTK7hQyL62snM04p3TK2Kqczw.o8jJ-Ji2f6RdKMgasRzTn0KkC5yM7x_QFnUuz8doGDo",
+      "links": [
+        {
+          "shop": "Авито",
+          "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/hhkb_studio_s_podstavkoy_8140602743",
+          "price": 30000,
+          "note": "с подставкой"
+        }
+      ],
+      "search": "HHKB Studio"
+    },
+    {
+      "category": "Клавиатуры",
+      "title": "NuPhy Air75 V3",
+      "note": "Тонкая беспроводная низкопрофильная клавиатура, раскладка 75%.",
+      "price": 9500,
+      "image": "https://50.img.avito.st/image/1/1.cqkS9ra13kA8V0RAerdHzxJW3ECsXURAPFfcQg.XJNZvSdFYuhcANQmurZDL-Q1GosbV0g-mEa4Ak_jll8",
+      "links": [
+        {
+          "shop": "Авито",
+          "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/numpy_air75_v3_nizkoprofilnaya_klaviatura_8501977397",
+          "price": 9500
+        },
+        {
+          "shop": "KNS",
+          "url": "https://www.kns.ru/product/klaviatura-nuphy-air75v3-nd-rn/",
+          "price": 14006,
+          "note": "под заказ"
+        },
+        {
+          "shop": "XCOM-SHOP",
+          "url": "https://xcom-shop.ru/nuphy_air75v3-nd-brn_1255756.html"
+        }
+      ],
+      "search": "NuPhy Air75 V3"
+    },
+    {
+      "category": "Клавиатуры",
+      "title": "NuPhy Air100 V3, тёмная",
+      "note": "Полноразмерная версия Air V3 с цифровым блоком, цвет Nebula Dark.",
+      "price": 14950,
+      "image": "https://20.img.avito.st/image/1/1.Etn1nra1vjCfNWA63YZrvvs-vDBLNWA6nzW8Mg.LfaznyT3AFw7yutAkPuWzdvJMvs8ZRVIJF-zS7Q1WwU",
+      "links": [
+        {
+          "shop": "Авито",
+          "url": "https://www.avito.ru/ufa/tovary_dlya_kompyutera/mehanicheskaya_klaviatura_nuphy_air_100_v3_dark_8502858596",
+          "price": 14950
+        },
+        {
+          "shop": "Doctorhead",
+          "url": "https://doctorhead.ru/product/nuphy_air100v3_hot_swap_brown_nano_switch_nebula_dark/"
+        },
+        {
+          "shop": "Digital Razor",
+          "url": "https://digital-razor.ru/catalog/keyboards/nuphy-air100v3-nebula-dark-blush-nano/"
+        }
+      ],
+      "search": "NuPhy Air100 V3"
+    },
+    {
+      "category": "Клавиатуры",
+      "title": "Сплит-клавиатура Sweep Pro",
+      "note": "Компактная раздельная клавиатура семейства Sweep.",
+      "price": 12000,
+      "image": "https://20.img.avito.st/image/1/1.blFx0ra1wrgxdja9IcMyWUxywLjPeTa9MXbAug.KolHSvP9xZBtzJBbiusxCGlzcnbyVXuKcjjP-qTOZ6I",
+      "links": [
+        {
+          "shop": "Авито",
+          "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/split_klaviatura_sweep_pro_8018718927",
+          "price": 12000
+        }
+      ],
+      "search": "Sweep сплит клавиатура",
+      "searchIn": [
+        "avito",
+        "ali",
+        "ozon"
+      ]
+    },
+    {
+      "category": "Клавиатуры",
+      "title": "Qwertykeys QK65 Mk3",
+      "note": "Клавиатура 65% в ретро-стиле с цветным экранчиком и мини-играми.",
+      "price": 19500,
+      "image": "https://20.img.avito.st/image/1/1.UBKuJba1_PvugQj-gmBoF4iF_vsQjgj-7oH--Q.Zc6OOd1TqAAdCmYEWlQX9WtlYAGaUNC8SN09y81i3Vo",
+      "links": [
+        {
+          "shop": "Авито",
+          "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/kastomnaya_klaviatura_qk65mk3_8163321964",
+          "price": 19500
+        },
+        {
+          "shop": "Qwertykeys",
+          "url": "https://www.qwertykeys.com/products/qk65-mk3-prebuilt-mechanical-keyboard",
+          "note": "официальный сайт, от $199"
+        }
+      ],
+      "search": "QK65 Mk3",
+      "searchIn": [
+        "avito",
+        "ozon",
+        "market"
+      ]
+    },
+    {
+      "category": "Клавиатуры",
+      "title": "Graystudio GWorks 01: Type-70 Infinite",
+      "note": "Кастомная клавиатура от Graystudio.",
+      "price": 19490,
+      "image": "https://c60.img.avito.st/image/1/1.vQZ707a1Ee9VcovvDfGqOEZzE-_FeIvvVXIT7Q.nf6y2uQZ5AQXhjDecCeZrhGHDdKrVln-m9CjJ-D2XHY",
+      "links": [
+        {
+          "shop": "Авито",
+          "url": "https://www.avito.ru/chelyabinsk/tovary_dlya_kompyutera/graystudio_gworks_01_type-70_infinite_8129370748",
+          "price": 19490
+        }
+      ],
+      "search": "Graystudio Type-70",
+      "searchIn": [
+        "avito",
+        "ali"
+      ]
+    },
+    {
+      "category": "Клавиатуры",
+      "title": "Кастомная клавиатура Class 60",
+      "price": 15000,
+      "image": "https://30.img.avito.st/image/1/1.elIEiLa11rsqKUy7fLEIRB0o1Lu6I0y7KinUuQ.42NAGFgddcZopwLUx2DaeymcUINp2eo53Qn9sqpFBN0",
+      "search": "Class 60 клавиатура",
+      "searchIn": [
+        "avito",
+        "market"
+      ],
+      "gone": true
+    },
+    {
+      "category": "Клавиатуры",
+      "title": "Сплит-клавиатура Totem 38 с донглом Prospector",
+      "note": "Раздельная клавиатура на 38 клавиш.",
+      "price": 14000,
+      "image": "https://c90.img.avito.st/image/1/1.UUnQTLa1_aCq5TOo_glMMOPs_6Bu5zOoquX_og.59lSjLCTAHXYhnlFxnzGO5DfRzAxGU2LhVLhY556WRI",
+      "search": "Totem 38 клавиатура",
+      "searchIn": [
+        "avito",
+        "ali"
+      ],
+      "gone": true
+    },
+    {
+      "category": "Клавиатуры",
+      "title": "Сплит-клавиатура Dactyl Manuform",
+      "note": "Объёмная эргономичная раздельная клавиатура.",
+      "price": 8000,
+      "image": "https://60.img.avito.st/image/1/1.axAe4La1x_l0SxnzRL1mSVdBxfmgSxnzdEvF-w.uVb9FcbAvpCGzc5VkeWN2Wm79jUcftF0NmXrLgwARMw",
+      "search": "Dactyl Manuform",
+      "searchIn": [
+        "avito",
+        "ali"
+      ],
+      "gone": true
+    },
+    {
+      "category": "Клавиатуры",
+      "title": "Кейкапы PBTfans No Signal",
+      "price": 5500,
+      "image": "https://50.img.avito.st/image/1/1.eyBrdra118lx0XnPERtpamrW1cnV3XnPcdHVyw.5P24eP41RkDRwYjjvIkA65-RZ2RvHl9fqiKUA2CHmLM",
+      "search": "PBTfans No Signal",
+      "searchIn": [
+        "avito",
+        "ali",
+        "ozon"
+      ],
+      "gone": true
+    },
+    {
+      "category": "Мыши",
+      "title": "Vaxee NP-01 Ergo",
+      "note": "Есть проводная и беспроводная (Wireless 8K) версии.",
+      "price": 13500,
+      "image": "https://c70.img.avito.st/image/1/1.ullVQ7a1FrB74oywLTmtHlrjFLDr6Iywe-IUsg.WC3kb7b7E6SBFW4zYxtbZd8t24jaFX8eNZDjMx5awCM",
+      "links": [
+        {
+          "shop": "Авито",
+          "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/vaxee_np-01_ergo_8440816833",
+          "price": 13500
+        }
+      ],
+      "search": "Vaxee NP-01 Ergo",
+      "priority": 2
+    },
+    {
+      "category": "Мыши",
+      "title": "Logitech MX Master 4",
+      "note": "Новая версия MX Master с тактильной отдачей.",
+      "price": 7490,
+      "image": "https://b00.img.avito.st/image/1/1.grjmbLa1LlG4ysRW7m6CzOrMLFFYx8RWuMosUw.f6yKALNP9ke8UWdaCUmuYIZ6LzEvtFMNmKdJIh2T6WE",
+      "links": [
+        {
+          "shop": "Авито",
+          "url": "https://www.avito.ru/rostov-na-donu/tovary_dlya_kompyutera/logitech_mx_master_4_8607349414",
+          "price": 7490
+        }
+      ],
+      "search": "Logitech MX Master 4"
+    },
+    {
+      "category": "Звук",
+      "title": "Микрофон Rode PodMic USB, белый",
+      "note": "PodMic с USB-C, XLR тоже остался.",
+      "price": 17990,
+      "image": "https://40.img.avito.st/image/1/1.m8f3Dra1Ny7nqJMpzWzs9dCuNS5JpZMp56g1LA.ybePJc8vpfbs_CathLKxfSYtRU_PGm-QKZ7Ku36qVf4",
+      "links": [
+        {
+          "shop": "Авито",
+          "url": "https://www.avito.ru/saratov/audio_i_video/rode_podmic_usb_white_7933300956",
+          "price": 17990
+        },
+        {
+          "shop": "Doctorhead",
+          "url": "https://doctorhead.ru/brands/rode/products/pro-audio/mikrofony/",
+          "price": 19890
+        },
+        {
+          "shop": "Price.ru",
+          "url": "https://price.ru/mikrofony/rode-podmic/",
+          "note": "сравнение цен"
+        }
+      ],
+      "search": "Rode PodMic USB White"
+    },
+    {
+      "category": "Звук",
+      "title": "Микрофон Rode PodMic (XLR)",
+      "note": "Динамический микрофон для голоса, подключается по XLR.",
+      "price": 12490,
+      "image": "https://10.img.avito.st/image/1/1.pn3qGLa1CpSAs9Seqj7zYPe4CJRUs9SegLMIlg.Xuk9iUmlLKFiLgULv9HT6MUku9Ig6MfR6rshtmyI6Is",
+      "links": [
+        {
+          "shop": "Doctorhead",
+          "url": "https://doctorhead.ru/brands/rode/products/pro-audio/mikrofony/",
+          "price": 12490,
+          "note": "новый"
+        },
+        {
+          "shop": "Авито",
+          "url": "https://www.avito.ru/moskva/audio_i_video/rode_podmic_xlr_8446941252",
+          "price": 19000
+        }
+      ],
+      "search": "Rode PodMic XLR"
+    },
+    {
+      "category": "Звук",
+      "title": "Микрофон sE Electronics DynaCaster DCM8",
+      "note": "Динамический микрофон со встроенным предусилителем на +30 дБ.",
+      "price": 14000,
+      "image": "https://c60.img.avito.st/image/1/1.__5d5ba1UxcnTJ0fL-bP6kNFURfjTp0fJ0xRFQ.P4aH1tFOPA2393-jXEeG4bm1bjfVLGaj7n6RqKhoAag",
+      "links": [
+        {
+          "shop": "Авито",
+          "url": "https://www.avito.ru/kirovskaya_oblast_kirov/audio_i_video/se_electronics_dynocaster_dcm8_8323730841",
+          "price": 14000
+        }
+      ],
+      "search": "sE Electronics DynaCaster"
+    },
+    {
+      "category": "Звук",
+      "title": "Микрофон Maono PD400X + звуковая карта Donner LiveJack",
+      "note": "Комплект из объявления; можно и по отдельности.",
+      "price": 10000,
+      "image": "https://20.img.avito.st/image/1/1.PqizGLa1kkGduQhBwyB0vLG4kEENswhBnbmQQw.LkXKUzIDZV3QM6_H0VnRVXNObDnxupkeUAVftZjd3Tg",
+      "links": [
+        {
+          "shop": "Авито",
+          "url": "https://www.avito.ru/kandalaksha/audio_i_video/mikrofon_maono_dp400x_v_svyazke_s_donner_livejack_8458425740",
+          "price": 10000
+        }
+      ],
+      "search": "Maono PD400X"
+    },
+    {
+      "category": "Звук",
+      "title": "Плеер FiiO SnowSky Echo Mini",
+      "note": "Маленький Hi-Fi-плеер в виде кассетного Walkman.",
+      "price": 6590,
+      "image": "https://10.img.avito.st/image/1/1.7rrqVLa1QlOQ_Yxbukez0ev1QFNU_4xbkP1AUQ.JdYEyyXqBAOgQfei0Mpt-AiGbaYKQ2Foyq3nKOSkZ5U",
+      "links": [
+        {
+          "shop": "Doctorhead",
+          "url": "https://doctorhead.ru/product/fiio_snowsky_echo_mini_black/",
+          "price": 6590,
+          "note": "чёрный"
+        },
+        {
+          "shop": "Яндекс Маркет",
+          "url": "https://market.yandex.ru/cc/AzZkzy",
+          "price": 7902,
+          "note": "золотой"
+        }
+      ],
+      "search": "FiiO SnowSky Echo Mini",
+      "gone": true
+    },
+    {
+      "category": "Мониторы",
+      "title": "Монитор ASUS ROG Strix OLED XG27ACDMS",
+      "note": "27 дюймов, QD-OLED, 2560×1440, 280 Гц.",
+      "price": 35000,
+      "image": "https://30.img.avito.st/image/1/1.KET-eba1hK2E0EqlolkaVvDZhq1A0kqlhNCGrw.vuYjy5nchU7vYiAeA0QxAEe0SKiHQHbC7d_qRJBEF1Q",
+      "links": [
+        {
+          "shop": "Авито",
+          "url": "https://www.avito.ru/sochi/tovary_dlya_kompyutera/monitor_igrovoy_asus_xg27acdms_oled_8432684653",
+          "price": 35000
+        },
+        {
+          "shop": "Price.ru",
+          "url": "https://price.ru/monitory/asus-xg27acdms/",
+          "price": 56730,
+          "note": "новый, сравнение цен"
+        }
+      ],
+      "search": "ASUS XG27ACDMS"
+    },
+    {
+      "category": "Мониторы",
+      "title": "Игровой 4K-монитор с высокой частотой",
+      "note": "В объявлении: 4K, 485 Гц.",
+      "price": 44990,
+      "image": "https://20.img.avito.st/image/1/1.a2XQpra1x4yOAC2LirMVBt8GxYxuDS2LjgDFjg.W7FoTxY7rID93nNXcPyIkI9XnzrADwYNtxhdqA582IA",
+      "links": [
+        {
+          "shop": "Авито",
+          "url": "https://www.avito.ru/kazan/tovary_dlya_kompyutera/igrovoy_monitor_4k_485gts_8440089292",
+          "price": 44990
+        }
+      ],
+      "search": "игровой монитор 4K 240 Гц"
+    },
+    {
+      "category": "Мониторы",
+      "title": "Монитор Gigabyte Aorus FO48U",
+      "note": "Большой 48-дюймовый OLED-монитор 4K.",
+      "price": 49490,
+      "image": "https://10.img.avito.st/image/1/1.fKGdzra10EiNaHRP6dNBqMZv0kgjZXRPjWjSSg.PoMC2n0IgPqEMZBuSzF1-FoytwOdO7NoUSJd8vyT1NQ",
+      "search": "Aorus FO48U",
+      "searchIn": [
+        "avito",
+        "market"
+      ],
+      "gone": true
+    },
+    {
+      "category": "Компьютеры и железо",
+      "title": "SSD Samsung 9100 Pro на 2 ТБ",
+      "note": "Быстрый NVMe-накопитель на PCIe 5.0.",
+      "price": 41990,
+      "image": "https://30.img.avito.st/image/1/1.RegMc7a16QEW1EcHCiZyuQjT6wGy2EcHFtTrAw.CmWt_YTSzEOC63lsPLiA3qzInWRz-xvCMBany0o3mXw",
+      "links": [
+        {
+          "shop": "Регард",
+          "url": "https://www.regard.ru/product/737825",
+          "price": 41990
+        }
+      ],
+      "search": "Samsung 9100 Pro 2TB",
+      "gone": true
+    },
+    {
+      "category": "Компьютеры и железо",
+      "title": "Mac Studio на M5 Max, 36 ГБ / 1 ТБ",
+      "note": "Вышел в сентябре 2026 года.",
+      "price": 259000,
+      "image": "https://30.img.avito.st/image/1/1.s7ZiZ7a1H18IzMFVCCmhvEzHHV_czMFVCMwdXQ.j7UO1EmJE_U2R-G1INGzNO6t0vj5G-IzXSsrxflK1gY",
+      "links": [
+        {
+          "shop": "Авито",
+          "url": "https://www.avito.ru/moskovskaya_oblast_moskovskiy/nastolnye_kompyutery/apple_mac_studio_m5_max_36gb_1tb_8520917171",
+          "price": 259000
+        }
+      ],
+      "search": "Mac Studio M5 Max"
+    },
+    {
+      "category": "Компьютеры и железо",
+      "title": "MacBook Pro на M-чипе",
+      "note": "Смотрел 14″ M3 Pro, 16″ M1 Max и 16″ M2 Max.",
+      "price": 89990,
+      "image": "https://70.img.avito.st/image/1/1.OLsFJba1lFIfgjpUeUlJi0yEllK7jjpUH4KWUA.stFriMAOdNb7peFkuOId2cB2_3uUQZbSXfVsdluSoz8",
+      "search": "MacBook Pro M3 Pro",
+      "gone": true
+    },
+    {
+      "category": "Компьютеры и железо",
+      "title": "Рабочая станция на i9-14900K",
+      "note": "64 ГБ DDR5, материнская плата Z790 Aorus.",
+      "price": 120364,
+      "image": "https://50.img.avito.st/image/1/1.Ci5hOba1psd7ngjBeV0gXWCZpMffkgjBe56kxQ.-lPv6_NpR8zpuH6BfUPb2I2zCTwN1-9m7-28iMGje24",
+      "links": [
+        {
+          "shop": "Авито",
+          "url": "https://www.avito.ru/himki/nastolnye_kompyutery/rabochaya_stantsiya_i9-14900k64gb_ddr5z790_aorus_8437527947",
+          "price": 120364
+        }
+      ],
+      "search": "компьютер i9-14900K",
+      "searchIn": [
+        "avito",
+        "market"
+      ]
+    },
+    {
+      "category": "Компьютеры и железо",
+      "title": "Мощный игровой компьютер",
+      "note": "Подойдёт похожая мощная сборка.",
+      "price": 125000,
+      "image": "https://80.img.avito.st/image/1/1.Kk75N7a1hqfjkCihoTMffuyXhKdHnCih45CEpQ.Hg9MXeq6eMRsJBwp9uKyzxddLxe_MuqimcWAUz_7ifc",
+      "search": "мощный игровой компьютер",
+      "searchIn": [
+        "avito",
+        "market"
+      ],
+      "gone": true
+    },
+    {
+      "category": "Консоли и игры",
+      "title": "Nintendo Switch 2",
+      "price": 30000,
+      "image": "https://c70.img.avito.st/image/1/1.7QvF3ra1QeK_d4_qk_n3SY5_Q-J7dY_qv3dD4A.SPLMPfcUithaXY0yBA2iKNVCRc8cN2RNRz3Wanc04v4",
+      "search": "Nintendo Switch 2",
+      "gone": true,
+      "priority": 2
+    },
+    {
+      "category": "Консоли и игры",
+      "title": "Steam Controller (2026)",
+      "note": "Новый геймпад Valve с двумя тачпадами. Официально продаётся только в Steam, за $99.",
+      "price": 12000,
+      "image": "https://30.img.avito.st/image/1/1.aDJQrra1xNt-D17bDJszYFwOxtvuBV7bfg_G2Q.aNV4tLtqd7DpDbzp__p9n7QXv_iSn7CCf7FJ-FVjB1Y",
+      "links": [
+        {
+          "shop": "Авито",
+          "url": "https://www.avito.ru/amurskaya_oblast_blagoveschensk/tovary_dlya_kompyutera/steam_controller_2_2026_8521987837",
+          "price": 12000
+        }
+      ],
+      "search": "Steam Controller 2026"
+    },
+    {
+      "category": "Консоли и игры",
+      "title": "Nintendo Switch OLED + геймпад Mobapad",
+      "price": 25000,
+      "image": "https://20.img.avito.st/image/1/1.Ps-QMLa1kiaKlzwg4Chtqd6RkCYumzwgipeQJA.Vbh1AS_TECUyzvL8oKWSduHLq2iA9Fjs00MRIrMFL6U",
+      "search": "Nintendo Switch OLED",
+      "gone": true
+    },
+    {
+      "category": "Консоли и игры",
+      "title": "Donkey Kong Bananza (Switch 2)",
+      "price": 899,
+      "image": "https://10.img.avito.st/image/1/1.Atb-7La1rj--SFo69qhBz-pMrD9AR1o6vkisPQ.Lbwd7IDB_udUpgKwusS7ert29zaO26H34bXyBpwEfe4",
+      "links": [
+        {
+          "shop": "Авито",
+          "url": "https://www.avito.ru/1/igry_pristavki_i_programmy/donkey_kong_bananza_nintendo_switch_2_7628728576",
+          "price": 899
+        }
+      ],
+      "search": "Donkey Kong Bananza"
+    },
+    {
+      "category": "Консоли и игры",
+      "title": "Sid Meier’s Civilization VII (Switch)",
+      "price": 809,
+      "image": "https://c80.img.avito.st/image/1/1.LZ-JT7a1gXbJ63Vz3wc-45zvg3Y35HVzyeuDdA.xuf_l4CGwc7S44w3AaVi-vq3l7bdpnlm-MZqdVoF_9A",
+      "links": [
+        {
+          "shop": "Авито",
+          "url": "https://www.avito.ru/1/igry_pristavki_i_programmy/sid_meiers_civilization_vii_nintendo_switch_12_8172409265",
+          "price": 809
+        }
+      ],
+      "search": "Civilization VII Nintendo Switch"
+    },
+    {
+      "category": "Консоли и игры",
+      "title": "Monster Hunter Rise (Switch)",
+      "price": 449,
+      "image": "https://50.img.avito.st/image/1/1.70pRbra1Q6Mrx42rA3m-UEXOQaPvxY2rK8dBoQ.s9NU54wRm24d-VLp4ud7xzruREbILgKHR2SUxjOtYxU",
+      "links": [
+        {
+          "shop": "Авито",
+          "url": "https://www.avito.ru/1/igry_pristavki_i_programmy/monster_hunter_rise_nintendo_switch_12_7564382421",
+          "price": 449
+        }
+      ],
+      "search": "Monster Hunter Rise Nintendo Switch"
+    },
+    {
+      "category": "Консоли и игры",
+      "title": "The Legend of Zelda: Breath of the Wild (картридж)",
+      "price": 2200,
+      "image": "https://20.img.avito.st/image/1/1.864wpLa1X0daD4FNWpuVyR8EXUeOD4FNWg9dRQ.pzbysYzAJlJAF-bvYrBTu7UiV1rSMleFeNBKAk2p_o0",
+      "search": "Zelda Breath of the Wild картридж",
+      "gone": true
+    },
+    {
+      "category": "Консоли и игры",
+      "title": "Super Mario Odyssey (картридж)",
+      "price": 2300,
+      "image": "https://c80.img.avito.st/image/1/1.EVg0rra1vbFeBWO7GpZWDBIOv7GKBWO7XgW_sw.L4Cs6L3ZPmxX1RpB_YL33c0KT5Ne-S6-_6VvEeUUzo0",
+      "search": "Super Mario Odyssey картридж",
+      "gone": true
+    },
+    {
+      "category": "Книги",
+      "title": "Олифер, «Компьютерные сети. Принципы, технологии, протоколы»",
+      "note": "Подойдёт любое издание, лучше юбилейное.",
+      "price": 1350,
+      "image": "https://10.img.avito.st/image/1/1.9znwp7a1W9CKDpXYktSDLd4HWdBODJXYig5Z0g.AACDJh-gEuzQwpKYUKhXUp5Y8Mr69I3eEZKJenqsjp0",
+      "links": [
+        {
+          "shop": "Авито",
+          "url": "https://www.avito.ru/moskva/knigi_i_zhurnaly/kompyuternye_seti._printsipy_tehnologii_protokoly_8123472552",
+          "price": 1350
+        },
+        {
+          "shop": "Лабиринт",
+          "url": "https://www.labirint.ru/books/737421/"
+        },
+        {
+          "shop": "Питер",
+          "url": "https://www.piter.com/collection/top-2/product/kompyuternye-seti-printsipy-tehnologii-protokoly-yubileynoe-izdanie-dopolnennoe-i-ispravlennoe",
+          "note": "издательство"
+        }
+      ],
+      "search": "Олифер Компьютерные сети",
+      "searchIn": [
+        "ozon",
+        "avito"
+      ]
+    },
+    {
+      "category": "Книги",
+      "title": "Книга «Linux с нуля»",
+      "price": 600,
+      "image": "https://b00.img.avito.st/image/1/1.mpQjMLa1Nn0Nkax9GwK3z2-RNH2dm6x9DZE0fw.YancP8dKDT9kCFyUWE5416mXWCjgmR7Yx4sc7dOIkrE",
+      "search": "Linux с нуля книга",
+      "searchIn": [
+        "ozon",
+        "market",
+        "avito"
+      ],
+      "gone": true
+    },
+    {
+      "category": "Книги",
+      "title": "Книги по программированию",
+      "note": "Подборка из объявления.",
+      "price": 400,
+      "image": "https://10.img.avito.st/image/1/1.sz_yFLa1H9bos7HQmFbFce-0HdZMv7HQ6LMd1A.2q2Autk8B1DDqWtIucStqtsKwRv6ErSQdQQYRGgwAjU",
+      "links": [
+        {
+          "shop": "Авито",
+          "url": "https://www.avito.ru/nizhniy_novgorod/knigi_i_zhurnaly/knigi_po_programmirovaniyu_8416442028",
+          "price": 400
+        }
+      ]
+    },
+    {
+      "category": "Рабочее место",
+      "title": "Умная настольная лампа Mijia",
+      "price": 9000,
+      "image": "https://b00.img.avito.st/image/1/1.LRGS9ba1gfjMU2v_xLEwGMlUg_gsXmv_zFOD-g.ltXt0KMIBPUnzOK7anN4LoC2aOT3XagNbdP42cyqR1M",
+      "links": [
+        {
+          "shop": "Авито",
+          "url": "https://www.avito.ru/rostov-na-donu/mebel_i_interer/umnaya_nastolnaya_lampa_mijia_pipi_8369845659",
+          "price": 9000
+        }
+      ],
+      "search": "Mijia умная настольная лампа"
+    },
+    {
+      "category": "Рабочее место",
+      "title": "Компьютерное кресло",
+      "note": "В объявлении было «кресло для компьютера с диваном».",
+      "price": 13300,
+      "image": "https://10.img.avito.st/image/1/1.7MglW7a1QCEL-tohcSz7ozP7QiGb8NohC_pCIw.bTSKOZLmnzXbUhSeho1KApk2lc4Vwoi7JceDsgDA2pY",
+      "search": "кресло для компьютера с диваном",
+      "searchIn": [
+        "avito"
+      ],
+      "gone": true
+    },
+    {
+      "category": "Рабочее место",
+      "title": "Подставка для наушников «Уолтер Уайт»",
+      "price": 1499,
+      "image": "https://c80.img.avito.st/image/1/1.4wTRkLa1T-3_MdXtm6PdV-gwTe1vO9Xt_zFN7w.QznlJw4ct1AgMd72oP8POzFfeb35tiiqUBfXQ8K7j5A",
+      "links": [
+        {
+          "shop": "Авито",
+          "url": "https://www.avito.ru/voronezh/tovary_dlya_kompyutera/podstavka_dlya_naushnikov_volter_uayt_walter_white_8092673677",
+          "price": 1499
+        }
+      ],
+      "search": "подставка для наушников Walter White",
+      "searchIn": [
+        "avito",
+        "ozon"
+      ]
+    },
+    {
+      "category": "Рабочее место",
+      "title": "Накладка на выключатель в виде ретро-геймпада",
+      "price": 1500,
+      "image": "https://b00.img.avito.st/image/1/1.1xQHUba1e_1Z95H6JWL3TQLxef25-pH6Wfd5_w.tKjpibJLuOBbhll8p-_u-j9RHExVAnpVoYVpfXqV150",
+      "search": "накладка на выключатель геймпад",
+      "searchIn": [
+        "avito",
+        "ozon",
+        "market"
+      ],
+      "gone": true
+    },
+    {
+      "category": "Разное",
+      "title": "Flipper Zero",
+      "note": "Карманный мультитул: радио, NFC, RFID, инфракрасный порт.",
+      "price": 16000,
+      "image": "https://10.img.avito.st/image/1/1.lJzWKra1OHWWjsxw8hydndiKOnVogcxwlo46dw.sHCcIQ3AgmNhz_ra7yviZGqN7b4lf7aPGn-c0kEneu0",
+      "search": "Flipper Zero",
+      "gone": true,
+      "priority": 2
+    },
+    {
+      "category": "Разное",
+      "title": "Фигурка Царицы из Genshin Impact",
+      "price": 16000,
+      "image": "https://20.img.avito.st/image/1/1.Ii7pvba1jsf5GyrAodlKVekdjMdXFirA-RuMxQ.xyp7EF2TOHG2a0WP7YPM8k9vm3k4hLK5ALxj1PdiXNI",
+      "links": [
+        {
+          "shop": "Авито",
+          "url": "https://www.avito.ru/moskva/kollektsionirovanie/tsaritsa_iz_igry_genshin_impact_tsaritsa_8499162464",
+          "price": 16000
+        }
+      ],
+      "search": "фигурка Царица Genshin Impact",
+      "searchIn": [
+        "avito",
+        "ozon"
+      ]
+    }
+  ]
 }

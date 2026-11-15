@@ -90,81 +90,207 @@
     } catch (e) { return null; }
   }
 
+
+  // Поисковые ссылки, которые добавляются сами по полю "search".
+  var SEARCH = {
+    market: { where: "на Яндекс Маркете", url: "https://market.yandex.ru/search?text=" },
+    ozon:   { where: "на Ozon",           url: "https://www.ozon.ru/search/?text=" },
+    avito:  { where: "на Авито",          url: "https://www.avito.ru/rossiya?q=" },
+    ali:    { where: "на AliExpress",     url: "https://aliexpress.ru/wholesale?SearchText=" }
+  };
+  var DEFAULT_SEARCH = ["market", "ozon", "avito"];
+  var OTHER = "Другое";
+
   var STATUS = { reserved: "Уже дарят", gifted: "Подарено" };
   var wishes = [];
+  var categories = [];
   var currency = "₽";
+  var state = { sort: "priority", cat: "all" };
 
-  function sorted(mode) {
+  function money(n, cur) {
+    return Math.round(n).toLocaleString("ru-RU") + " " + (cur || currency);
+  }
+
+  function hostOf(u) {
+    try { return new URL(u).hostname.replace(/^www\./, ""); } catch (e) { return u; }
+  }
+
+  function categoryOf(w) { return w.category || OTHER; }
+
+  function sorted(list) {
     var rank = function (w) { return w.status === "gifted" ? 2 : (w.status === "reserved" ? 1 : 0); };
     var price = function (w) { return typeof w.price === "number" ? w.price : Infinity; };
-    return wishes.slice().sort(function (a, b) {
+    var mode = state.sort;
+    return list.slice().sort(function (a, b) {
       var r = rank(a) - rank(b);
       if (r) return r;
-      if (mode === "cheap") return price(a) - price(b);
-      if (mode === "expensive") return price(b) - price(a);
-      return (b.priority || 2) - (a.priority || 2) || a._order - b._order;
+      if (mode === "cheap") return price(a) - price(b) || a._order - b._order;
+      if (mode === "expensive") return price(b) - price(a) || a._order - b._order;
+      return (b.priority || 1) - (a.priority || 1) || a._order - b._order;
     });
   }
 
-  function render(mode) {
-    var list = document.getElementById("list");
+  // Ссылки магазинов: сначала конкретные товары, потом поиск.
+  function shopsOf(w) {
+    var out = [];
+    var links = Array.isArray(w.links) ? w.links.slice() : [];
+    if (w.link) links.unshift({ url: w.link }); // старый формат: одна ссылка
+    links.forEach(function (l) {
+      var u = safeUrl(l && l.url);
+      if (!u) return;
+      out.push({ url: u, label: l.shop || hostOf(u), price: l.price, note: l.note, search: false });
+    });
+    if (typeof w.search === "string" && w.search.trim()) {
+      (Array.isArray(w.searchIn) ? w.searchIn : DEFAULT_SEARCH).forEach(function (k) {
+        var s = SEARCH[k];
+        if (!s) return;
+        out.push({ url: s.url + encodeURIComponent(w.search.trim()), label: "Искать " + s.where, search: true });
+      });
+    }
+    return out;
+  }
+
+  function renderShops(ul, w) {
+    shopsOf(w).forEach(function (s) {
+      var li = document.createElement("li");
+      var a = document.createElement("a");
+      a.className = "shop" + (s.search ? " shop--search" : "");
+      a.href = s.url;
+      a.target = "_blank";
+      a.rel = "noopener noreferrer";
+      a.textContent = s.label;
+      li.appendChild(a);
+      if (typeof s.price === "number" && s.price > 0) {
+        var p = document.createElement("span");
+        p.className = "shop__price";
+        p.textContent = money(s.price, w.currency);
+        li.appendChild(p);
+      }
+      if (s.note) {
+        var n = document.createElement("span");
+        n.className = "shop__note";
+        n.textContent = s.note;
+        li.appendChild(n);
+      }
+      ul.appendChild(li);
+    });
+    if (!ul.children.length) ul.remove();
+  }
+
+  function wishNode(w) {
     var tpl = document.getElementById("wish-tpl");
-    list.textContent = "";
+    var node = tpl.content.firstElementChild.cloneNode(true);
+    node.querySelector(".wish__title").textContent = w.title || "Без названия";
+    node.querySelector(".wish__note").textContent = w.note || "";
+    if (w.gone) node.querySelector(".wish__gone").hidden = false;
+
+    var img = safeUrl(w.image);
+    var im = node.querySelector("img");
+    if (img) {
+      im.addEventListener("error", function () { node.classList.add("wish--noimg"); });
+      im.src = img;
+      im.alt = w.title || "";
+    } else {
+      node.classList.add("wish--noimg");
+    }
+
+    renderShops(node.querySelector(".shops"), w);
+
+    var priceBox = node.querySelector(".wish__price");
+    if (typeof w.price === "number" && w.price > 0) {
+      renderPrice(node.querySelector(".wish__digits"), w.price, w.currency || currency);
+      var t = node.querySelector(".wish__price-text");
+      t.className = "visually-hidden";
+      t.textContent = "Цена от " + money(w.price, w.currency);
+    } else {
+      priceBox.remove();
+    }
+
+    var stamp = node.querySelector(".wish__stamp");
+    if (STATUS[w.status]) {
+      node.classList.add("wish--" + w.status);
+      stamp.textContent = STATUS[w.status];
+      stamp.hidden = false;
+    } else if (w.priority === 3) {
+      node.classList.add("wish--top");
+      stamp.textContent = "Очень хочу";
+      stamp.hidden = false;
+    }
+    return node;
+  }
+
+  function render() {
+    var box = document.getElementById("groups");
+    box.textContent = "";
     document.getElementById("empty").hidden = wishes.length > 0;
 
-    sorted(mode).forEach(function (w) {
-      var node = tpl.content.firstElementChild.cloneNode(true);
-      node.querySelector(".wish__title").textContent = w.title || "Без названия";
-      node.querySelector(".wish__note").textContent = w.note || "";
+    var show = state.cat === "all" ? categories : [state.cat];
+    show.forEach(function (cat) {
+      var items = sorted(wishes.filter(function (w) { return categoryOf(w) === cat; }));
+      if (!items.length) return;
 
-      var img = safeUrl(w.image);
-      if (img) {
-        var im = node.querySelector("img");
-        im.src = img;
-        im.alt = w.title || "";
-      } else {
-        node.classList.add("wish--noimg");
-      }
+      var sec = document.createElement("section");
+      sec.className = "group";
+      var h = document.createElement("h3");
+      h.className = "group__title";
+      h.textContent = cat;
+      var n = document.createElement("span");
+      n.className = "group__count";
+      n.textContent = items.length;
+      h.appendChild(n);
+      sec.appendChild(h);
 
-      var link = safeUrl(w.link);
-      var a = node.querySelector(".wish__link");
-      if (link) {
-        a.href = link;
-        try { a.textContent = "Где купить: " + new URL(link).hostname.replace(/^www\./, ""); } catch (e) { }
-      } else {
-        a.remove();
-      }
-
-      var priceBox = node.querySelector(".wish__price");
-      if (typeof w.price === "number" && w.price > 0) {
-        renderPrice(node.querySelector(".wish__digits"), w.price, w.currency || currency);
-        var t = node.querySelector(".wish__price-text");
-        t.className = "visually-hidden";
-        t.textContent = "Цена: " + w.price.toLocaleString("ru-RU") + " " + (w.currency || currency);
-      } else {
-        priceBox.remove();
-      }
-
-      var stamp = node.querySelector(".wish__stamp");
-      if (STATUS[w.status]) {
-        node.classList.add("wish--" + w.status);
-        stamp.textContent = STATUS[w.status];
-        stamp.hidden = false;
-      } else if (w.priority === 3) {
-        node.classList.add("wish--top");
-        stamp.textContent = "Очень хочу";
-        stamp.hidden = false;
-      }
-      list.appendChild(node);
+      var ol = document.createElement("ol");
+      ol.className = "list";
+      items.forEach(function (w) { ol.appendChild(wishNode(w)); });
+      sec.appendChild(ol);
+      box.appendChild(sec);
     });
+  }
+
+  function pressOnly(buttons, active) {
+    Array.prototype.forEach.call(buttons, function (b) { b.setAttribute("aria-pressed", String(b === active)); });
+  }
+
+  function setupCats() {
+    var box = document.getElementById("cats");
+    box.textContent = "";
+    if (categories.length < 2) { box.hidden = true; return; }
+
+    var counts = {};
+    wishes.forEach(function (w) { var c = categoryOf(w); counts[c] = (counts[c] || 0) + 1; });
+
+    [{ id: "all", name: "Все", n: wishes.length }].concat(categories.map(function (c) {
+      return { id: c, name: c, n: counts[c] || 0 };
+    })).forEach(function (c) {
+      if (!c.n) return;
+      var b = document.createElement("button");
+      b.type = "button";
+      b.className = "cat";
+      b.dataset.cat = c.id;
+      b.setAttribute("aria-pressed", String(c.id === state.cat));
+      b.textContent = c.name;
+      var n = document.createElement("span");
+      n.className = "cat__n";
+      n.textContent = c.n;
+      b.appendChild(n);
+      b.addEventListener("click", function () {
+        state.cat = c.id;
+        pressOnly(box.querySelectorAll(".cat"), b);
+        render();
+      });
+      box.appendChild(b);
+    });
+    box.hidden = false;
   }
 
   function setupSort() {
     var buttons = document.querySelectorAll(".sort__btn");
     Array.prototype.forEach.call(buttons, function (btn) {
       btn.addEventListener("click", function () {
-        Array.prototype.forEach.call(buttons, function (b) { b.setAttribute("aria-pressed", String(b === btn)); });
-        render(btn.dataset.sort);
+        pressOnly(buttons, btn);
+        state.sort = btn.dataset.sort;
+        render();
       });
     });
   }
@@ -177,11 +303,18 @@
     .then(function (data) {
       if (data && data.currency) currency = data.currency;
       wishes = ((data && data.wishes) || []).map(function (w, i) { w._order = i; return w; });
+      categories = Array.isArray(data && data.categories) ? data.categories.slice() : [];
     })
     .catch(function () { wishes = []; })
     .then(function () {
+      // Категории, которых нет в общем списке, идут в конец в порядке появления.
+      wishes.forEach(function (w) {
+        var c = categoryOf(w);
+        if (categories.indexOf(c) < 0) categories.push(c);
+      });
       var active = wishes.filter(function (w) { return w.status !== "gifted"; }).length;
       renderIndex(active);
-      render("priority");
+      setupCats();
+      render();
     });
 })();

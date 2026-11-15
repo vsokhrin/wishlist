@@ -243,16 +243,74 @@ body {
 .wish__note { margin: .3rem 0 0; color: var(--muted); max-width: 34rem; }
 .wish__note:empty { display: none; }
 
-.wish__link {
-  display: inline-block;
-  margin-top: .6rem;
+.wish__gone { margin: .35rem 0 0; font-size: var(--step--1); color: var(--air-red); }
+
+/* Магазины: конкретные товары — чернилами, поиск — бледнее и пунктиром */
+.shops {
+  list-style: none;
+  margin: .75rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .35rem 1.25rem;
+  font-size: var(--step--1);
+  line-height: 1.4;
+}
+.shops li { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0 .4rem; }
+.shop {
   color: var(--ink);
-  font-weight: 500;
+  font-weight: 600;
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: .2em;
 }
-.wish__link:hover { text-decoration-thickness: 2px; }
+.shop:hover { text-decoration-thickness: 2px; }
+.shop--search { color: var(--muted); font-weight: 400; text-decoration-style: dotted; }
+.shop--search:hover { color: var(--ink); }
+.shop__price { font-variant-numeric: tabular-nums; }
+.shop__note { color: var(--muted); }
+
+/* ---------- Категории: бирки с дырочкой, как на посылках ---------- */
+.cats { display: flex; flex-wrap: wrap; gap: .5rem .6rem; margin: .4rem 0 2.25rem; }
+.cats[hidden] { display: none; }
+.cat {
+  position: relative;
+  font: 500 var(--step--1)/1.2 var(--ui);
+  color: var(--ink);
+  background: var(--envelope);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: .5rem .8rem .5rem 1.55rem;
+  cursor: pointer;
+}
+.cat::before {
+  content: "";
+  position: absolute;
+  left: .6rem;
+  top: 50%;
+  width: .42rem;
+  height: .42rem;
+  margin-top: -.21rem;
+  border-radius: 50%;
+  background: var(--paper);
+  box-shadow: inset 0 0 0 1px var(--line);
+}
+.cat:hover { border-color: var(--ink-soft); }
+.cat[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: #fff; }
+.cat[aria-pressed="true"]::before { box-shadow: none; }
+.cat__n { margin-left: .4rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+.cat[aria-pressed="true"] .cat__n { color: rgba(255, 255, 255, .72); }
+
+.group + .group { margin-top: 2.75rem; }
+.group__title {
+  display: flex;
+  align-items: baseline;
+  gap: .6rem;
+  margin: 0 0 .7rem;
+  font: 400 var(--step-2)/1.2 var(--hand);
+  color: var(--ink);
+}
+.group__count { font: 500 var(--step--1)/1 var(--ui); color: var(--muted); }
 
 .wish__price { justify-self: end; text-align: right; }
 .wish__digits { display: flex; align-items: flex-end; gap: .3rem; }
